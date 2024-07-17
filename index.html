@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css">  <!-- Links an external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <!-- Display area for the calculator -->
+            <div class="display">
+                <input type="text" name="display" id="display" readonly>
+            </div>
+
+            <!-- Calculator buttons -->
+            <div class="buttons">
+                <input type="button" value="%" onclick="calculatePercentage()"> <!-- Percentage button -->
+                <input type="button" value="CE" onclick="clearEntry()"> <!-- Clear Entry button -->
+                <input type="button" value="C" onclick="clearDisplay()"> <!-- Clear button -->
+                <input type="button" value="&larr;" onclick="backspace()"> <!-- Backspace button -->
+                <br>
+                <input type="button" value="1/x" onclick="calculateReciprocal()"> <!-- Reciprocal button -->
+                <input type="button" value="x²" onclick="calculateSquared()"> <!-- Square button -->
+                <input type="button" value="√" onclick="calculateSquareRoot()"> <!-- Square Root button -->
+                <input type="button" value="/" onclick="addToDisplay('/')"> <!-- Divide button -->
+                <br>
+                <input type="button" value="7" onclick="addToDisplay('7')"> <!-- Number 7 button -->
+                <input type="button" value="8" onclick="addToDisplay('8')"> <!-- Number 8 button -->
+                <input type="button" value="9" onclick="addToDisplay('9')"> <!-- Number 9 button -->
+                <input type="button" value="*" onclick="addToDisplay('*')"> <!-- Multiply button -->
+                <br>
+                <input type="button" value="4" onclick="addToDisplay('4')"> <!-- Number 4 button -->
+                <input type="button" value="5" onclick="addToDisplay('5')"> <!-- Number 5 button -->
+                <input type="button" value="6" onclick="addToDisplay('6')"> <!-- Number 6 button -->
+                <input type="button" value="-" onclick="addToDisplay('-')"> <!-- Subtract button -->
+                <br>
+                <input type="button" value="1" onclick="addToDisplay('1')"> <!-- Number 1 button -->
+                <input type="button" value="2" onclick="addToDisplay('2')"> <!-- Number 2 button -->
+                <input type="button" value="3" onclick="addToDisplay('3')"> <!-- Number 3 button -->
+                <input type="button" value="+" onclick="addToDisplay('+')"> <!-- Add button -->
+                <br>
+                <input type="button" value="-/+" onclick="toggleSign()"> <!-- Toggle sign button -->
+                <input type="button" value="0" onclick="addToDisplay('0')"> <!-- Number 0 button -->
+                <input type="button" value="." onclick="addToDisplay('.')"> <!-- Decimal point button -->
+                <input type="button" value="=" onclick="calculateResult()"> <!-- Equal button -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Links an external JavaScript file -->
+</body>
+</html>
